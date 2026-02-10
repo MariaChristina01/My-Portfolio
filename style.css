@@ -1,14 +1,95 @@
-/* styles.css */
+html {
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    max-height: fit-content;
+    max-width: 100%;
+}
+
+
+
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-image: url("img.jpg.webp");
-    background-size: 100%;
-    background-position: Full;
-    background-repeat: repeat;
+    background-size: cover;
+    background-position: auto;
+    background-repeat: no-repeat;
     margin-top: -20rem;
 }
 
+header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.5s;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.container-fluid {
+    background-color: #9abef8d3;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+    margin-right: 0;
+    box-shadow: 0 3px 7px rgba(1, 2, 1, 0.5);
+    opacity: 90%;
+    width: 100%;
+    transition: top 0.3s;
+
+}
+
+.Container-fluid .transition {
+    transition: background-color 0.5s ease;
+}
+
+ul li a {
+    display: block;
+    color: #EDEDCE;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+ul li a:hover {
+    border-start-end-radius: 10px;
+    border-style: solid;
+    border-color: #EDEDCE;
+    background-color: #0C2C55;
+    color: #EDEDCE;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #EDEDCE;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.5s ease;
+}
+
+
+/* 
 #header {
     position: fixed;
     top: 0;
@@ -18,13 +99,13 @@ body {
 }
 
 #header.scrolled {
-    background: #fff;
-    /* solid background */
+    background: #161414;
+    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+} */
 
 
-.nav-links {
+/* .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -36,20 +117,20 @@ body {
     font-weight: 500;
     margin-top: 3rem;
 
-}
+} */
 
 
 
-.navbar {
+/* .navbar {
     background-color: #09637E;
     padding: 3rem 4rem;
     box-shadow: 0 4px 2px rgba(0, 0, 1, 0.6);
     margin-bottom: 3rem;
     margin-top: -1rem;
-}
+} */
 
-.navbar h1 {
-    
+/* .navbar h1 {
+
     display: flex;
     margin: -2rem -1rem;
     justify-content: flex-start;
@@ -74,25 +155,25 @@ body {
     color: #fff;
     font-weight: 100;
     font-weight: bold;
-}
+} */
 
 .hero {
     display: flex;
     margin-top: 5.5rem;
     padding: 25rem 8rem;
-    
-    
+
+
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    margin-top: -10rem;
-    margin-left: 25rem;
+    margin-top: -20rem;
+    margin-left: 10rem;
     max-width: 50%;
-    
+
 }
 
 .hero-text h1 {
@@ -143,7 +224,7 @@ body {
 .image img {
     margin-left: 9rem;
     margin-right: 5rem;
-    margin-top : 10rem;
+    margin-top: 1rem;
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.9);
@@ -154,13 +235,13 @@ body {
 .about {
     display: flex;
     padding: 10rem 10rem;
-    
     color: #333;
-    margin-top: -20rem;
+    margin-top: -45rem;
+    margin-bottom: -5rem;
 }
 
 .about-content {
-    flex: 1 1 55%;
+    flex: 1 1 100%;
     max-width: 600px;
 }
 
@@ -181,7 +262,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .metric-box {
@@ -203,10 +284,11 @@ body {
 }
 
 .skills {
-   
-    
+    display: center;
+    padding: 10rem 10rem;
     color: #333;
-    margin-top: 0;
+    margin-top: -19.9rem;
+    margin-bottom: 5rem;
 }
 
 .skills h2 {
@@ -254,13 +336,17 @@ body {
 }
 
 .projects {
-    
+    display: center;
+    padding: 10rem 10rem;
+    gap: 1.5rem;
     color: #333;
+    margin-top: -28rem;
+    margin-bottom: -10rem;
 }
 
 .projects h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     text-align: center;
     color: #296374;
     margin-top: 8rem;
@@ -277,11 +363,11 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 500px;
     padding: 1.5rem;
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: 7rem;
+    margin-bottom: -1rem;
 }
 
 .project-card img {
@@ -312,7 +398,7 @@ body {
 
 .contact {
     padding: 2rem 6rem;
-   
+
     text-align: center;
     color: #333;
 }
