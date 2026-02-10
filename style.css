@@ -37,7 +37,7 @@ header {
 }
 
 .container-fluid {
-    background-color: #9abef8d3;
+    background-image: url("img.jpg.webp");
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5rem;
@@ -46,7 +46,7 @@ header {
     opacity: 90%;
     width: 100%;
     transition: top 0.3s;
-
+    cursor: pointer;
 }
 
 .Container-fluid .transition {
@@ -61,10 +61,10 @@ ul li a {
 }
 
 ul li a:hover {
-    border-start-end-radius: 10px;
-    border-style: solid;
+    border-start-end-radius: 5px;
+    border-style: hidden;
     border-color: #EDEDCE;
-    background-color: #0C2C55;
+    background-image: url("img.jpg.webp");
     color: #EDEDCE;
 }
 
@@ -82,7 +82,7 @@ ul li a:hover {
 }
 
 .nav-links li a {
-    color: #EDEDCE;
+    color: #84847c;
     text-decoration: none;
     padding: 8px 12px;
     transition: color 0.5s ease;
