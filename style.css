@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-image: url("img.jpg.webp");
+    background-image: url("images/img.jpg.webp");
     background-size: cover;
     background-position: auto;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@ header {
 }
 
 .container-fluid {
-    background-image: url("img.jpg.webp");
+    background-image: url("images/img.jpg.webp");
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5rem;
@@ -64,7 +64,7 @@ ul li a:hover {
     border-start-end-radius: 5px;
     border-style: hidden;
     border-color: #EDEDCE;
-    background-image: url("img.jpg.webp");
+    background-image: url("images/img.jpg.webp");
     color: #EDEDCE;
 }
 
@@ -448,6 +448,27 @@ ul li a:hover {
 .contact-box p a {
     color: #296374;
     text-decoration: none;
+}
+
+#scrollUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#scrollUpBtn:hover {
+    background-color: #555;
 }
 
 footer {
