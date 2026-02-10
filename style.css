@@ -3,7 +3,8 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background-color: #09637E;
-    color: #333;
+    margin-top: -20rem;
+
 }
 
 #header {
@@ -75,12 +76,13 @@ body {
 
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 19rem 8rem;
-    background-color: #fff;
-    margin-bottom: 7rem;
-    margin-top: -9rem;
+    margin-top: 5.5rem;
+    padding: 25rem 8rem;
+    background-image: url("img.jpg.webp");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 .hero-text {
@@ -88,9 +90,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: -10rem;
     margin-left: 25rem;
     max-width: 50%;
+    
 }
 
 .hero-text h1 {
@@ -129,7 +132,7 @@ body {
 
 .primary {
     background-color: #296374;
-    color: #fff;
+    color: white;
 }
 
 .secondary {
@@ -138,12 +141,14 @@ body {
     border: 2px solid #296374;
 }
 
-.hero-image img {
+.image img {
+    margin-left: 9rem;
     margin-right: 5rem;
-    margin-top: 10rem;
+    margin-top : 10rem;
     max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.9);
+    margin-bottom: 18rem;
 
 }
 
