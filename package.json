@@ -1,0 +1,12 @@
+{
+  "name": "maria-portfolio",
+  "version": "1.0.0",
+  "description": "Maria Christina's Full Stack Developer Portfolio",
+  "main": "Home.html",
+  "scripts": {
+    "build": "echo 'Build complete'"
+  },
+  "keywords": ["portfolio", "web-developer"],
+  "author": "Maria Christina Castillejo",
+  "license": "MIT"
+}
