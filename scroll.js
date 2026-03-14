@@ -38,3 +38,12 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+window.addEventListener("scroll", () => {
+    const photo = document.querySelector(".hero");
+    const text = document.querySelector(".hero-text");
+
+    let offset = window.pageYOffset;
+    photo.style.transform = `translateY(${offset * 0.3}px)`; // slower
+    text.style.transform = `translateY(${offset * 0.6}px)`; // faster
+});
