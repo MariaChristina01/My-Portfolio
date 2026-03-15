@@ -1,5 +1,9 @@
 {
-  "buildCommand": "echo 'Build complete'",
-  "public": true,
-  "env": {}
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "outputDirectory": "build"
 }
