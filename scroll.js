@@ -1,49 +1,27 @@
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
+const scrollUpBtn = document.getElementById("scrollUpBtn");
+
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset;
+
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
+        navbar.style.top = "0";
     } else {
-        document.getElementById("navbar").style.top = "-50px";
+        navbar.style.top = "-60px";
     }
     prevScrollpos = currentScrollPos;
+
+    if (currentScrollPos > 300) {
+        scrollUpBtn.style.display = "block";
+    } else {
+        scrollUpBtn.style.display = "none";
+    }
 };
 
-//Projects slide
-let slideIndex = 1;
-showSlides(slideIndex);
-
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-
-window.addEventListener("scroll", () => {
-    const photo = document.querySelector(".hero");
-    const text = document.querySelector(".hero-text");
-
-    let offset = window.pageYOffset;
-    photo.style.transform = `translateY(${offset * 0.3}px)`; // slower
-    text.style.transform = `translateY(${offset * 0.6}px)`; // faster
+scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 });
